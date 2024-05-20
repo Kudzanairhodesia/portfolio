@@ -1,0 +1,476 @@
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+// phone
+.navigation{display: none;}
+.body{
+    background-color: rgb(47, 46, 46);
+    height: 50vh;
+}
+.mobile-nav{
+    img{
+        width: 40px;
+        margin-left: 10px;
+    }
+   
+}
+.container-fluid{
+    background-color: rgb(96, 86, 86);
+    box-shadow: 10px 2px 5px black;
+   
+   a{
+    display: flex;
+    width: 50px;
+    height: 54px;
+    
+   }
+button{color: white;}
+    
+}
+
+
+nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+    background-color: rgb(47, 46, 46);
+    
+
+    .hamburger{
+        height: 30px;
+        width: 30px;
+        border: 2px solid rgb(178, 132, 15);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        margin-right: 10px;
+        .line{
+            height: 2px;
+            width: 70%;
+            background: rgb(178, 132, 15);
+        }
+    }
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(47, 46, 46);
+    color: white;
+    justify-content: center;
+    text-align: center;
+    h6{
+        font-style: italic;
+        text-decoration-style: wavy;
+        color: rgba(137, 103, 16, 0.567);
+    }
+    span{
+        color: rgb(178, 132, 15);
+    }
+    button{
+        height: 50px;
+        background-color: rgb(178, 132, 15);
+        border: none;
+        font-weight: 700;
+        
+    }
+    img{
+        width: 200px;
+        margin-top: 10px;
+        border-radius: 40%;
+        // box-shadow: inset 10px  white;
+    }
+}
+.who{
+ background-color: rgb(47, 46, 46);
+ color: white;
+ justify-content: center;
+ text-align: center;
+ .who-am{
+    h3{
+        font-size: larger;
+        font-weight: 700;
+        color: rgb(178, 132, 15);
+    }
+ }
+ .txt-2{
+    h5{
+        color: rgb(178, 132, 15);
+        
+    }
+ }
+ img{
+
+    width: 200px;
+    border-radius: 40%;
+    
+ }
+ button{
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: rgb(178, 132, 15);
+    font-weight: 700;
+ }
+}
+.services{
+    margin-top: -1px;
+    background-color: rgb(47, 46, 46);
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    // height: 50vh
+    h2{
+        color: rgb(178, 132, 15);
+        // margin-top: 10px;
+    }
+    .skills{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+        align-items: center;
+        .w{
+      
+            background-color: rgb(178, 132, 15);
+            width: 200px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            border-radius: 10px;
+            align-items: center;
+            border: 3px solid black ;
+            box-shadow: 5px 5px 6px black;
+        }
+        .wd{
+            background-color: rgb(178, 132, 15);
+            width: 200px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            border-radius: 10px;
+            align-items: center;
+            border: 3px solid black ;
+            box-shadow: 5px 5px 6px black;
+        }
+        .dm{
+            background-color: rgb(178, 132, 15);
+            width: 200px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            border-radius: 10px;
+            align-items: center;
+            border: 3px solid black ;
+            box-shadow: 5px 5px 6px black;
+        }
+    }
+}
+.contact{
+    display: flex;
+}
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) {  
+   
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+    body{
+        
+        background-color: rgb(47, 46, 46);
+        height: auto;
+    }  
+    .navigation{
+        display: block;
+        background-color: rgb(47, 46, 46);
+        display: flex;
+        color: white;
+        // height: 100vh;
+        justify-content: space-between;
+       
+       
+        ul{
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+        }
+        img{
+            display: flex;
+            width: 50px;
+            height: 50px;
+            margin: 20px;
+        }
+    }/* Rectangle 3 */
+    
+    // position: absolute;
+    // width: 274px;
+    // height: 74px;
+    // left: 205px;
+    // top: 560px;
+    
+    // background: rgba(195, 156, 58, 0.93);
+    
+    .banner{display: flex;
+        flex-direction: row;
+        gap: 80px;
+        background-color: rgb(47, 46, 46);
+        color:white ;
+        height: 50vh;
+        span{
+            color: goldenrod;
+            font-size: larger;
+            font-weight: bolder;
+        }
+        .text-1{
+            display: flex;
+            flex-direction: column;
+            margin-left: 100px;
+            margin-top: 13rem;
+            button{
+                height: 50px;
+                width: 180px;
+                border: none;
+                background-color: rgb(178, 132, 15);
+            }
+        }
+        .pic{
+            display: flex;
+            flex-direction: row;
+            // width: 80px;
+            // height: 0px;
+            img{
+                // position: absolute;
+                display: flex;
+                height: 20rem;
+                width: 15rem;
+                margin-top: 7rem;
+                border-radius: 50%;
+                
+            }
+        }
+        
+    }
+    .who{
+        background-color: rgb(47, 46, 46);
+        .who-am{
+            margin-left: 90px;
+            color: white;
+            // margin-top: 50px;
+            // display: flex;
+            // flex-direction: row;
+        }
+        img{
+            display: flex;
+            height: 280px;
+            border-radius: 50%;
+            margin-left:90px;
+            margin-top: 30px;
+        }
+        .picandtext{
+            display: flex;
+            margin-top: 50px;
+            gap: 50px;
+            .txt-2{
+                display: flex;
+                flex-direction: column;
+                color: goldenrod;
+                p{
+                    color: white ;
+                }
+            }
+        }
+        button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 600px;
+            
+            height: 50px;
+            width: 150px;
+            background-color: rgb(207, 156, 26);
+        }
+    }
+    .services{
+        display: flex;
+        flex-direction: column;
+        background-color:rgb(47, 46, 46);
+        height: 20vh;
+        color: goldenrod;
+        h2{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .skills{
+            display: flex;
+            justify-content: center;
+            gap: 70px;
+        }
+        .w{
+            box-shadow: inset;
+            // background-color: aqua;
+            border: 3px solid rgb(186, 161, 24);
+            height: 100px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .wd{
+            box-shadow: inset;
+            // background-color: aqua;
+            // border-width: 1rem;
+            // border-color: rgb(204, 153, 25);
+            border: 3px solid rgb(186, 161, 24);
+            height: 100px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .dm{ 
+            box-shadow: inset;
+            // background-color: aqua;
+            border: 3px solid rgb(186, 161, 24);
+            height: 100px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+.TXT{
+    display: flex;
+    color: rgb(178, 132, 15);
+    font-size: larger;
+    font-weight: bolder;
+    justify-content: center;
+    background-color: rgb(47, 46, 46);
+}
+.mail{
+    display: flex;
+    gap: 5px;
+    img{
+        width: 30px;
+        height: 30px;
+    }
+    
+}
+.insta{
+    display: flex;
+    gap: 5px;
+    img{
+        width: 30px;
+        height: 30px;
+    }
+}
+    .contact{
+        background-color: rgb(47, 46, 46);
+        font-size: larger;
+        color: white;
+       display: flex;
+       justify-content: space-evenly;
+        .form{
+            display: flex;
+            flex-direction: row;
+        }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    
+}
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) { 
+
+}
